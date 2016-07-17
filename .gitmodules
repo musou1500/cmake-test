@@ -1,0 +1,3 @@
+[submodule "libs/json11"]
+	path = libs/json11
+	url = http://github.com/dropbox/json11

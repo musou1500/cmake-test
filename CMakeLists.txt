@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 2.8.11)
+project (cmake-test)
+include_directories(src/)
+include_directories(libs/json11)
+add_subdirectory(libs/json11)
+add_definitions("-Wall -std=c++11")
+add_executable(cmake-test src/main.cpp)
+target_link_libraries(cmake-test json11)
